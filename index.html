@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="webstie icon " type="png" href="https://logopond.com/logos/1fd53a36b19dd7e88736d202efe37ed3.png">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather practic</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="flex">
+        <input type="text" id="input" placeholder="Enter your location..." />
+        <button id="btn"> 
+        <label for="input"
+          ><img class="img"
+            width="30"
+            src="data:image/png;base64,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"
+            alt=""
+        /></label>
+    </button>
+      </div>
+      <img
+        width="200"
+        src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"
+        alt=""
+      />
+      <h2 id="temp">13 <sup>o</sup></h2>
+      <div class="location-name">
+        <img
+          width="35"
+          src="https://www.svgrepo.com/download/38705/location-pin.svg"
+          alt=""
+        />
+        <p id="location-name">Uzbekistan</p>
+      </div>
+      <div class="wind-and-humindly">
+        <div class="div-humindity">
+            <img width="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1z5YQFST_4IRf3kynF3QDmekutmaSwt7QiRAvx4rVKp8eaG6u4y61nMUbwztT8-55sPM&usqp=CAU" alt="">
+            <div>
+                <span id="humindly">50%</span>
+                <span>Humindity</span>
+            </div>
+        </div>
+        <div class="div-wind">
+            <img width="50" src="https://cdn-icons-png.flaticon.com/512/72/72579.png" alt="">
+            <div>
+                <span id="wind">15 km/s</span>
+                <span>Wind speed</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/script.js" type="module"></script>
+  </body>
+</html>
