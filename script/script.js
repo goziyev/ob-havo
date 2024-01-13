@@ -47,7 +47,7 @@ function working(){
              error.setAttribute('class', 'display-none')
             })
              .catch(() => {
-                alert("xatolik")
+                alert("Siz xato manzil kiritdingiz")
                 succes.setAttribute('class', 'display-none')
                 errorT.setAttribute('class', 'display')
                 //  console.log(error)
