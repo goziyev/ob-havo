@@ -26,6 +26,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 500px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -154,5 +155,13 @@ body {
 #btn {
   border: none;
   background-color: white;
+}
+
+.display {
+  display: block;
+}
+
+.display-none {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

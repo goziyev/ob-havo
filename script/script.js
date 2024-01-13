@@ -5,7 +5,8 @@ const humindly = document.getElementById("humindly")
 const wind = document.getElementById("wind")
 const input = document.getElementById("input")
 const locationName = document.getElementById("location-name")
-
+const succes = document.getElementById('succes')
+const errorT = document.getElementById('error')
 
 
 function validate(input){
@@ -36,13 +37,21 @@ function validate(input){
     temp.innerText = `${data.main.temp}` +"°C"
 }
 
-
 function working(){
     if(validate(input)){
 
-        cityName(input.value).then((data)=>{
+        cityName(input.value)
+            .then((data)=>{
              elements(data)
+             succes.setAttribute('class', 'display')
+             error.setAttribute('class', 'display-none')
             })
+             .catch(() => {
+                alert("xatolik")
+                succes.setAttribute('class', 'display-none')
+                errorT.setAttribute('class', 'display')
+                //  console.log(error)
+                })
             input.value =""
         }
 }
