@@ -38,7 +38,7 @@ function validate(input){
 
 
 function working(){
-    if(validate){
+    if(validate(input)){
 
         cityName(input.value).then((data)=>{
              elements(data)
@@ -48,3 +48,10 @@ function working(){
 }
 
 button && button.addEventListener("click",working)
+
+
+document.addEventListener("keypress",function(event){
+    if(event.key === "Enter"){
+        working();
+    }
+})
